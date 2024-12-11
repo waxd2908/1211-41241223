@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台灣股票日交易資訊</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container mt-4">
+    <h1 class="text-center">台灣股票日交易資訊</h1>
+    <div class="mb-3">
+      <input type="text" id="stockId" class="form-control" placeholder="請輸入股票代碼，例如 2330">
+    </div>
+    <button class="btn btn-primary" onclick="fetchStockData()">查詢</button>
+    <div class="mt-4">
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>日期</th>
+            <th>成交股數</th>
+            <th>開盤價</th>
+            <th>最高價</th>
+            <th>最低價</th>
+            <th>收盤價</th>
+          </tr>
+        </thead>
+        <tbody id="stockTable">
+          <!-- 資料將由 JavaScript 動態填入 -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
